@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Fier Autocare Garage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      background-color: #222;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 26px;
+      color: #fff;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #111;
+        width: 200px;
+        padding: 20px;
+        border-radius: 6px;
+        z-index: 1000;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+
+    /* ===== BANNER ===== */
+    .banner {
+      height: 400px;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url('../image/car.png') center/cover no-repeat;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .banner h1 {
+      font-size: 2.8rem;
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 60px auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .about-img {
+      flex: 1;
+      background: url('../image/car.png') center/cover no-repeat;
+      min-height: 400px;
+    }
+
+    .about-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .about-content h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .about-content p {
+      font-size: 1.05em;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+
+      .about-content {
+        padding: 20px;
+      }
+
+      .banner h1 {
+        font-size: 2em;
+      }
+    }
+
+    /* ===== FOOTER ===== */
+.footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: left;
+    }
+
+    .footer-section {
+      flex: 1 1 300px;
+      margin: 20px;
+      max-width: 350px;
+    }
+
+    .footer-section h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      background-color: #111;
+      color: #aaa;
+      padding: 15px 10px;
+      font-size: 13px;
+    }
+
+
+    @media (max-width: 768px) {
+      footer {
+        padding-bottom: 10px !important;
+      }
+
+      .footer-bottom {
+        margin-top: 20px;
+        padding: 15px 0;
+        font-size: 14px;
+      }
+
+      .footer-section {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="logo">
+      <a href="../index.html"><img src="../image/logo.png" alt="Logo"></a>
+      <span>Fier Autocare Garage</span>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="../file/service.html">Services</a>
+      <a href="../file/about.html">About Us</a>
+      <a href="../file/tell.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- ===== BANNER ===== -->
+  <div class="banner">
+    <h1>About Fier Autocare Garage</h1>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about-section">
+    <div class="about-img"></div>
+    <div class="about-content">
+      <h2>Who We Are</h2>
+      <p>
+        Fier Autocare Garage is your go-to destination for professional vehicle servicing, diagnostics, and repairs in Kigali. With a reputation built on trust and excellence, we provide tailored automotive care with precision and reliability.
+        <br><br>
+        Our team brings passion to every job — from routine maintenance to full engine work, car electronics, and body painting. We blend modern technology with experienced hands to give your vehicle the best care possible. When you choose us, you're not just choosing a garage. You're joining a family that values your car as much as you do.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+ <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are a professional car repair and maintenance service offering a wide range of automotive solutions.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../file/service.html">Services</a></li>
+          <li><a href="../file/about.html">About Us</a></li>
+          <li><a href="../file/tell.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Phone: +250 788 649 548</li>
+          <li>Email: info@yourgarage.com</li>
+          <li>Address: 467KK Kagarama, Kigali, Rwanda</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 FIER AUTOCARE GARAGE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT ===== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
