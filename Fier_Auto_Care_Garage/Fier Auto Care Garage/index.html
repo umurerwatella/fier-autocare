@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fier Autocare Garage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <!-- Make sure Font Awesome is included -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./web_css/style.css">
+</head>
+<body>
+<div>
+   
+<!-- NAVBAR -->
+<nav class="navbar">
+ <div class="left-section">
+  <a href="index.php" class="logo">
+    <img src="image/logo.png" alt="Logo">
+  </a>
+  <span class="garage-name">FIER AUTOCARE GARAGE</span>
+</div>
+
+
+  <ul class="nav-links" id="mobileMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="./file/service.html">Services</a></li>
+    <li><a href="./file/about.html">About Us</a></li>
+    <li><a href="./file/tell.html">Contact Us</a></li>
+  </ul>
+
+  <div class="right-section">
+    <a href="https://wa.me/250788649548" target="_blank" class="whatsapp-icon">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
+<!-- VIDEO + TEXT + BUTTONS + ARROWS -->
+<div class="video-container">
+  <video autoplay muted loop id="videoPlayer">
+    <source src="./image/gg.mp4" type="video/mp4">
+  </video>
+
+  <div class="rotating-text">
+  <p class="main-welcome">WELCOME TO FIER AUTOCARE GARAGE</p>
+  <p id="rotatingText">Your Journey, Our Responsibility.</p>
+</div>
+
+
+  <div class="buttons">
+    <a href="./file/tell.html" class="btn contact-btn">Contact Us</a>
+    <a href="./file/service.html" class="btn learn-more-btn">Learn More</a>
+  </div>
+
+  <div class="arrow arrow-left" onclick="moveVideo(-1)">&#10094;</div>
+  <div class="arrow arrow-right" onclick="moveVideo(1)">&#10095;</div>
+</div>
+
+     <section style="padding-top: 70px;">
+        <h2 class="gallery-title"><u>Our Services</u></h2>
+        <div class="services-container">
+
+     <div class="service-box">
+         <a href="./file/7th.html"><i class="fas fa-tachometer-alt service-icon"></i>
+         <div class="service-title">Chiptuning</div>
+         <div class="service-desc">Safe engine software tuning to increase power, save fuel, and improve driving performance.</div></a>
+        </div>
+
+            <div class="service-box">
+                <a href="./file/6th.html"><i class="fas fa-car-crash service-icon"></i>
+                <div class="service-title">Vehicle Body Repair & Painting</div>
+                <div class="service-desc">Expert collision repairs and precision body painting to restore your car’s appearance.</div></a>
+            </div>
+
+            <div class="service-box">
+                <a href="./file/5th.html"><i class="fas fa-bolt service-icon"></i>
+                <div class="service-title">Hybrid Electric & Car Repair</div>
+                <div class="service-desc">Specialized maintenance and repairs for hybrid electric vehicles to ensure top performance.</div></a>
+            </div>
+
+            <div class="service-box">
+                <a href="./file/4th.html"><i class="fas fa-key service-icon"></i>
+                <div class="service-title">Car Keys & Remote Programming</div>
+                <div class="service-desc">Professional key cutting, programming, and remote troubleshooting for modern vehicles.</div></a>
+            </div>
+
+            <div class="service-box">
+                <a href="./file/3rd.html"><i class="fas fa-battery-full service-icon"></i>
+                <div class="service-title">Automobile Electricity & Electronics Repair</div>
+                <div class="service-desc">Advanced diagnostics and repairs for electrical and electronic systems in your car.</div></a>
+            </div>
+
+            <div class="service-box">
+                <a href="./file/2nd.html"><i class="fas fa-stethoscope service-icon"></i>
+                <div class="service-title">Vehicle Diagnostics & Troubleshooting</div>
+                <div class="service-desc">Comprehensive diagnostics to identify issues quickly and recommend precise solutions.</div></a>
+            </div>
+
+            <div class="service-box">
+                <a href="./file/1st.html"><i class="fas fa-cogs service-icon"></i>
+                <div class="service-title">Engine & Transmission Repair Services</div>
+                <div class="service-desc">Skilled engine and transmission repairs to keep your vehicle running smoothly.</div></a>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="why-choose-us" aria-label="Reasons to choose our garage services">
+        <h2>Why Choose Us?</h2>
+        <div class="why-container">
+            <div class="why-card" role="article">
+                <i class="fas fa-certificate icon" aria-hidden="true" title="Certified Expertise"></i>
+                <h3>Certified Expertise</h3>
+                <p>Our team of ASE-certified technicians delivers unparalleled craftsmanship backed by rigorous training and industry credentials.</p>
+            </div>
+            <div class="why-card" role="article">
+                <i class="fas fa-handshake icon" aria-hidden="true" title="Transparent Pricing"></i>
+                <h3>Transparent Pricing</h3>
+                <p>We believe in honest communication with clear, upfront estimates and no hidden fees, fostering trust and peace of mind.</p>
+            </div>
+            <div class="why-card" role="article">
+                <i class="fas fa-microchip icon" aria-hidden="true" title="Advanced Technology"></i>
+                <h3>Advanced Technology</h3>
+                <p>Utilizing cutting-edge diagnostic equipment, we identify and address vehicle issues swiftly and precisely for optimal results.</p>
+            </div>
+            <div class="why-card" role="article">
+                <i class="fas fa-stopwatch icon" aria-hidden="true" title="Prompt Service"></i>
+                <h3>Prompt Service</h3>
+                <p>Committed to efficient turnaround times without compromising quality, ensuring you’re back on the road safely and quickly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="garage-info" aria-label="About Fier Autocare Garage">
+  <div class="info-container">
+    <div class="image-container" role="img" aria-label="Image of Fier Autocare Garage">
+      <img src="./image/garage.jpeg" alt="Garage Image" class="garage-image" />
+    </div>
+    <div class="text-container">
+      <h2>About Our Garage</h2>
+      <p>
+        At Fier Autocare Garage, we pride ourselves on delivering exceptional automotive repair and maintenance services, tailored to meet every customer's unique needs.
+      </p>
+      <p>
+        Our highly skilled technicians specialize in all vehicle types  from traditional combustion engines to the latest hybrid and electric models  ensuring your car gets the expert care it deserves.
+      </p>
+      <p>
+        Using state-of-the-art diagnostic tools and genuine parts, we guarantee your vehicle will be handled with the utmost precision and professionalism, so you can drive away with confidence.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="get-appointment" class="section-hidden" style="padding: 60px 20px; background-color:#333; font-family: Arial, sans-serif;">
+    <h2 style="text-align: center; font-size: 2.8em; margin-bottom: 40px; color: #fff;">Get Appointment</h2>
+
+    <div style="display: flex; align-items: center; justify-content: center; max-width: 1000px; margin: 0 auto; gap: 40px; flex-wrap: wrap;">
+<center>
+        <!-- Right Slideshow -->
+        <div style="flex: 2; min-width: 300px;">
+            <div class="slideshow-container" style="
+                position: relative;
+                width: 100%;
+                height: 220px;
+                overflow: hidden;
+                border-radius: 15px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+            ">
+                <div class="slide-track" style="display: flex; transition: transform 0.6s ease; width: 300%;">
+                    <div class="slide" style="min-width: 100%; padding: 20px; box-sizing: border-box; color: #555;">
+                        <h3 style="margin-bottom: 8px; font-size: 1.4em;">🤝 Trusted Professionals</h3>
+                        <p style="font-size: 0.95em;">Our team delivers top-quality service you can rely on.</p>
+                    </div>
+                    <div class="slide" style="min-width: 100%; padding: 20px; box-sizing: border-box; color: #555;">
+                        <h3 style="margin-bottom: 8px; font-size: 1.4em;">🔧 Expert Service</h3>
+                        <p style="font-size: 0.95em;">We provide expert diagnostics, repairs, and maintenance.</p>
+                    </div>
+                    <div class="slide" style="min-width: 100%; padding: 20px; box-sizing: border-box; color: #555;">
+                        <h3 style="margin-bottom: 8px; font-size: 1.4em;">📅 Easy Booking</h3>
+                        <p style="font-size: 0.95em;">Schedule your appointment easily online anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </center>
+    </div>
+
+
+    <!-- Contact Us Button BELOW -->
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="./file/tell.html" style="
+            padding: 12px 40px;
+            background-color: #555;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        "
+        onmouseover="this.style.backgroundColor='#333'; this.style.boxShadow='0 6px 15px rgba(0,0,0,0.3)'"
+        onmouseout="this.style.backgroundColor='#555'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.2)'">
+            Get appointment
+        </a>
+    </div>
+</section>
+
+    <!-- Our Work - Before & After Gallery -->
+    <section>
+       
+  <div class="gallery-container">
+    <h2 class="gallery-title"><u>Gallery</u></h2>
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="./image/Before.jpg" alt="Before">
+        <div class="overlay-label">Before</div>
+        <div class="caption">Back Bumper Damage</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="./image/After.jpg" alt="After">
+        <div class="overlay-label">After</div>
+        <div class="caption">Back Repaired and Painted</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="./image/y.jpg" alt="Before Interior">
+        <div class="overlay-label">Before</div>
+        <div class="caption">Front Bumped Damage</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="./image/u.jpg" alt="After Interior">
+        <div class="overlay-label">After</div>
+        <div class="caption">Front Repaired and Painted</div>
+      </div>
+    </div>
+  </div>        
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials">
+        <center><h2>What Our Customers Say</h2></center>
+        <div class="testimonial-container">
+            <div class="testimonial-box">
+                <p>"Fier Autocare Garage saved my car! Fast, professional, and affordable."</p>
+                <h4>* Jean M.</h4>
+            </div>
+            <div class="testimonial-box">
+                <p>"I love how they explain every repair step. Trustworthy mechanics you can rely on."</p>
+                <h4>* Aline K.</h4>
+            </div>
+            <div class="testimonial-box">
+                <p>"Top-notch service! My car feels brand new. Highly recommend."</p>
+                <h4>* Eric S.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a professional car repair and maintenance service offering a wide range of automotive solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./file/service.html">Services</a></li>
+                    <li><a href="./file/about.html">About Us</a></li>
+                    <li><a href="./file/tell.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: +250 788 649 548</li>
+                    <li>Email: info@yourgarage.com</li>
+                    <li>Address: 467KK Kagarama, Kigali, Rwanda</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FIER AUTOCARE GARAGE. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<script>
+// Rotating Text Functionality
+const texts = [
+  "Your Journey, Our Responsibility.",
+  "More Than Just Repairs, We Build Relationships.",
+  "We Care for Your Car Like It’s Our Own"
+];
+let currentIndex = 0;
+
+function rotateText() {
+  const rotatingTextElement = document.getElementById('rotatingText');
+  rotatingTextElement.textContent = texts[currentIndex];
+  currentIndex = (currentIndex + 1) % texts.length;
+}
+setInterval(rotateText, 3000); // Change text every 3 seconds
+
+// Simple Video Navigation
+function moveVideo(direction) {
+  const video = document.getElementById("videoPlayer");
+  if (direction === -1 && video.currentTime > 5) {
+    video.currentTime -= 5;
+  } else if (direction === 1 && video.currentTime < video.duration - 5) {
+    video.currentTime += 5;
+  }
+}
+
+// Slideshow Logic
+let slideIndex = 0;
+function showSlides() {
+  const slides = document.querySelector('.slide-track');
+  slideIndex = (slideIndex + 1) % slides.children.length;
+  slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+setInterval(showSlides, 3000);
+
+// Slide-In Observer
+const section = document.querySelector('#get-appointment');
+const observer = new IntersectionObserver(entries => {
+  if (entries[0].isIntersecting) {
+    section.classList.add('section-visible');
+    observer.unobserve(section);
+  }
+}, { threshold: 0.3 });
+observer.observe(section);
+
+// Hamburger Toggle
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+// Animate WELCOME text from bottom to top
+window.addEventListener('DOMContentLoaded', () => {
+  const welcomeText = document.querySelector('.main-welcome');
+  welcomeText.style.opacity = '0';
+  welcomeText.style.transform = 'translateY(100px)';
+  welcomeText.style.transition = 'all 1s ease-out';
+
+  setTimeout(() => {
+    welcomeText.style.opacity = '2';
+    welcomeText.style.transform = 'translateY(0)';
+  }, 200); // Small delay to allow transition to kick in
+});
+
+</script>
+</body>
+</html>
